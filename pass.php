@@ -1,5 +1,12 @@
 <?php
 
+//Usernames Etc...
+$twitter_handle = "YOUR_TWITTER_HANDLE";
+$instagram_id = "YOUR_INSTAGRAM_HANDLE";
+$dribbble_name = "YOUR_DRIBBBLE_HANDLE";
+$github_name = "YOUR_GITHUB_HANDLE";
+
+//DB Access
 $dbhost = "your-database-host-url";
 $dbuser = "your-database-username";
 $dbpass = "your-database-password";
