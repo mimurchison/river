@@ -1,7 +1,7 @@
 River
 ====
 
-Demo: http://www.dhariri.com/feed
+Demo: http://www.dhariri.com/river
 
 **Thanks:**
 - [James Mallison](https://github.com/J7mbo) for ['twitter-api-php'](https://github.com/J7mbo/twitter-api-php)
