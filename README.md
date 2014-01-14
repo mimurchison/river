@@ -13,7 +13,7 @@ Demo: http://www.dhariri.com/river
 - [Nicolas Gallagher](https://github.com/necolas) for ['normalize.css'](https://github.com/necolas/normalize.css)
 
 
-River is an open-source social network feed agregation thing. In its current form its basically just a twitter-like stream with support for your instagram, github and dribbble accounts.
+River is an open-source social network feed agregation thing. In its current form its basically just a twitter-like stream with support for your Instagram, GitHub and Dribbble accounts.
 
 **To make your own you'll need:**
 - A fork of this repo
