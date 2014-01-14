@@ -3,6 +3,8 @@ River
 
 Demo: http://www.dhariri.com/river
 
+![river gif](http://media.giphy.com/media/MOMOMPdOy52De/giphy.gif)
+
 **Thanks:**
 - [James Mallison](https://github.com/J7mbo) for ['twitter-api-php'](https://github.com/J7mbo/twitter-api-php)
 - [Hakim El Hattab](https://github.com/hakimel) for ['stroll.js'](https://github.com/hakimel/stroll.js)
