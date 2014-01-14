@@ -147,8 +147,4 @@ foreach ($result as $key => $value) {
 }
 send_data($query, $dbhost, $dbuser, $dbpass, $dbname);
 //end github
-
-
-
-
 ?>
