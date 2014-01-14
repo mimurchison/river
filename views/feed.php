@@ -2,10 +2,9 @@
 <?php
 
 include '../pass.php';
-
 include '../data/fetch.php';
 
-$db = new mysqli($dbhost,$dbuser,$dbpass,$dbname);
+$db = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
 if($db->connect_errno > 0){
     die('Unable to connect to database [' . $db->connect_error . ']');
@@ -21,7 +20,6 @@ if(!$result = $db->query($sql)){
 }
 
 while($row = $result->fetch_assoc()){
-
     $date = date("l, F jS Y", strtotime($row['datetime']));
     $service_id = $row['service_id'];
     $category = $row['category'];
@@ -29,19 +27,19 @@ while($row = $result->fetch_assoc()){
     $data = $row['data'];
     $attachment = $row['attachment'];
     $link = $row['permalink'];
-
 ?>
+
 <li class="post" id="<?php echo $service_id ?>">
 	<?php if( $category == 'link' ) { ?>
 		<a target="_blank" href="<?php echo $attachment ?>">
-	<?php } else if( strlen($attachment) > 0 ) { ?>
+	<?php } else if( strlen($attachment) > 0 || $category == 'link') { ?>
 		<a target="_blank" href="<?php echo $link ?>">
 	<?php } ?>
 	<div class="icons">
 		<span class="logo <?php echo $service ?>">
 			<?php
 			switch ($service) {
-				case 'twitter':
+			    case 'twitter':
 	        		echo "&#xe086;";
 	        		break;
 			    case 'dribbble':
@@ -59,7 +57,7 @@ while($row = $result->fetch_assoc()){
 		<span class="logo category <?php echo $service ?>">
 			<?php
 			switch ($category) {
-				case 'link':
+			    case 'link':
 	        		echo "&#128279;";
 	        		break;
 			    case 'photo':
