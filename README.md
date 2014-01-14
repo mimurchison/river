@@ -13,7 +13,7 @@ Demo: http://www.dhariri.com/river
 - [Nicolas Gallagher](https://github.com/necolas) for ['normalize.css'](https://github.com/necolas/normalize.css)
 
 
-Feed is an open-source social network feed agregation thing. In its current form its basically just a tiwtter feed with instagram, github and dribbble support.
+River is an open-source social network feed agregation thing. In its current form its basically just a twitter-like stream with support for your instagram, github and dribbble accounts.
 
 **To make your own you'll need:**
 - A fork of this repo
@@ -22,8 +22,9 @@ Feed is an open-source social network feed agregation thing. In its current form
 - A Table (call this **tbl_posts**) *(structure: id, service_id, datetime, category, service, data, attachment, permalink)*
 - A Twitter Developer account with Auth (If you want Twitter access)
 - An Instagram Developer access token (If you want instagram access)
+- Patience and a bit of dev skill
 
-To edit the CSS without LESS, just delete the **styles.less** file and edit the **styles.css** file
+To edit the CSS without LESS, just delete the **styles/styles.less** file and edit the **styles/styles.css** file
 
 **Use Notes:**
 
