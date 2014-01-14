@@ -1,4 +1,4 @@
-/* the human responsible */
+/* the humans responsible */
 /* humanstxt.org */
 
 /* TEAM */
