@@ -24,7 +24,7 @@ http://www.dhariri.com
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="styles/normal.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/stroll.css">
+    <link rel="stylesheet" type="text/css" href="styles/stroll.css">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <!-- Scripts -->
@@ -33,12 +33,13 @@ http://www.dhariri.com
 </head>
 <body>
     <ul id="content" class="posts flip">
-    <div class="loading"></div>
+        <div class="loading"></div>
     </ul>
-</body> 
+</body>
+
 <script>
 $(document).ready(function() {
-    $('#content').load("views/feed.php", function() { //fix
+    $('#content').load("views/feed.php", function() {
         $( this ).hide().fadeIn('slow');
         if($(window).width() > 600) {
             stroll.bind( 'ul' );
@@ -46,4 +47,5 @@ $(document).ready(function() {
     });
 });
 </script>
+
 </html>
