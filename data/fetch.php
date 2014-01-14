@@ -31,7 +31,7 @@ require_once('../vendor/TwitterAPIExchange.php');
 
 //twitter
 $APIurl = 'https://api.twitter.com/1.1/statuses/user_timeline/list.json';
-$getfield = '?screen_name=YOUR_HANDLE&page=1&count=30'; //put your name here
+$getfield = '?screen_name='.$twitter_handle.'&page=1&count=30';
 $requestMethod = 'GET';
 $twitter = new TwitterAPIExchange($settings);
 $json = $twitter->setGetfield($getfield)
@@ -50,7 +50,7 @@ foreach ($decoded as $key => $value) {
 	$service_id = strval($decoded[$key]['id']);
 	$attachment = $decoded[$key]['entities']['urls'][0]['expanded_url'];
 	$photo = $decoded[$key]['entities']['media'][0]['media_url'];
-	$permalink = "https://twitter.com/YOUR_TWITTER_HANDLE/status/".$service_id; //put your name here as well
+	$permalink = "https://twitter.com/".$twitter_handle."\/status\/".$service_id;
 
 	if( strlen($attachment) > 1 ) {
 		$category = 'link';
@@ -75,7 +75,7 @@ send_data($query, $dbhost, $dbuser, $dbpass, $dbname);
 //end twitter
 
 //instagram
-$result = fetch_data("https://api.instagram.com/v1/users/####_YOUR_USER_ID/media/recent/?client_id=".$instagram_client_id); //specify your user ID (number not name)
+$result = fetch_data("https://api.instagram.com/v1/users/".$instagram_id."/media/recent/?client_id=".$instagram_client_id);
 $result = json_decode($result, true);
 
 $query = "REPLACE INTO tbl_posts (id, service_id, datetime, category, service, data, attachment, permalink) VALUES ";
@@ -97,7 +97,7 @@ send_data($query, $dbhost, $dbuser, $dbpass, $dbname);
 //end instagram
 
 //dribbble
-$result = fetch_data("http://api.dribbble.com/players/YOUR_DRIBBBLE_NAME/shots"); //put your name here
+$result = fetch_data("http://api.dribbble.com/players/".$dribbble_name."/shots");
 $result = json_decode($result, true);
 
 $query = "REPLACE INTO tbl_posts (id, service_id, datetime, category, service, data, attachment, permalink) VALUES ";
@@ -119,7 +119,7 @@ send_data($query, $dbhost, $dbuser, $dbpass, $dbname);
 //end dribbble
 
 //github
-$result = fetch_data("https://github.com/users/YOUR_GITHUB_NAME/contributions_calendar_data"); //put your name here
+$result = fetch_data("https://github.com/users/".$github_name."/contributions_calendar_data");
 $result = json_decode($result, true);
 
 $query = "REPLACE INTO tbl_posts (id, service_id, datetime, category, service, data, attachment, permalink) VALUES ";
