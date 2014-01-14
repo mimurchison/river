@@ -14,7 +14,6 @@
 
 By David Hariri, 2014
 http://www.dhariri.com
-
 -->
 <head>
     <title>River</title>
@@ -31,6 +30,8 @@ http://www.dhariri.com
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/stroll.js"></script>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <!-- Humans -->
+    <link rel="author" href="humans.txt">
 </head>
 <body>
     <div class="stats">

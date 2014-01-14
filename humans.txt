@@ -1,0 +1,16 @@
+/* the human responsible */
+/* humanstxt.org */
+
+/* TEAM */
+	David Hariri
+	Site: http://dhariri.com/
+	Twitter: https://twitter.com/davehariri
+
+/* THANKS */
+	(github contributors add your name here)
+
+    James Mallison for 'twitter-api-php'
+    Hakim El Hattab for 'stroll.js'
+    Ivan Drinchev for 'monosocialiconsfont'
+    Daniel Bruce for 'Entypo'
+    Nicolas Gallagher for 'normalize.css'
