@@ -17,7 +17,7 @@ Feed is an open-source social network feed agregation thing. In its current form
 - A fork of this repo
 - A Server running a recent version of Apache, PHP and MySQL
 - A Database
-- A Table (call this **tbl_posts**)
+- A Table (call this **tbl_posts**) *(structure: id, service_id, datetime, category, service, data, attachment, permalink)*
 - A Twitter Developer account with Auth (If you want Twitter access)
 - An Instagram Developer access token (If you want instagram access)
 
