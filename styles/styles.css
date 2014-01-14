@@ -75,6 +75,49 @@ body .dot {
   margin-left: 45px;
   margin-bottom: 20px;
 }
+body .stats {
+  width: 100%;
+  background-color: #26292c;
+  transition: all .3s ease;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+body .stats.open {
+  height: 400px;
+  opacity: 1;
+  cursor: auto;
+}
+body .stats.closed {
+  height: 50px;
+  opacity: 0.7;
+  cursor: 'pointer';
+}
+body .stats:hover {
+  opacity: 1;
+}
+body .stats .stats-box {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  font-weight: 100;
+  margin: 100px 20px;
+  float: left;
+}
+body .stats .stats-box svg {
+  transition: all .2s ease;
+}
+body .stats .stats-box svg path {
+  opacity: 0.5;
+  transition: all .2s ease;
+  pointer-events: all;
+  fill: none;
+}
+body .stats .stats-box svg path:hover {
+  opacity: 1;
+}
 body ul {
   width: 100%;
   position: relative;
