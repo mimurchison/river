@@ -2,9 +2,9 @@
 
 //Usernames Etc...
 $twitter_handle = "YOUR_TWITTER_HANDLE";
-$instagram_id = "YOUR_INSTAGRAM_HANDLE";
-$dribbble_name = "YOUR_DRIBBBLE_HANDLE";
-$github_name = "YOUR_GITHUB_HANDLE";
+$instagram_id = "YOUR_INSTAGRAM_ID";
+$dribbble_name = "YOUR_DRIBBBLE_NAME";
+$github_name = "YOUR_GITHUB_NAME";
 
 //DB Access
 $dbhost = "your-database-host-url";
