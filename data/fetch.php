@@ -31,7 +31,7 @@ require_once('../vendor/TwitterAPIExchange.php');
 
 //twitter
 $APIurl = 'https://api.twitter.com/1.1/statuses/user_timeline/list.json';
-$getfield = '?screen_name=davehariri&page=1&count=30'; //put your name here
+$getfield = '?screen_name=YOUR_HANDLE&page=1&count=30'; //put your name here
 $requestMethod = 'GET';
 $twitter = new TwitterAPIExchange($settings);
 $json = $twitter->setGetfield($getfield)
@@ -75,7 +75,7 @@ send_data($query, $dbhost, $dbuser, $dbpass, $dbname);
 //end twitter
 
 //instagram
-$result = fetch_data("https://api.instagram.com/v1/users/381121150/media/recent/?client_id=".$instagram_client_id); //specify this in the pass file
+$result = fetch_data("https://api.instagram.com/v1/users/####_YOUR_USER_ID/media/recent/?client_id=".$instagram_client_id); //specify your user ID (number not name)
 $result = json_decode($result, true);
 
 $query = "REPLACE INTO tbl_posts (id, service_id, datetime, category, service, data, attachment, permalink) VALUES ";
@@ -97,7 +97,7 @@ send_data($query, $dbhost, $dbuser, $dbpass, $dbname);
 //end instagram
 
 //dribbble
-$result = fetch_data("http://api.dribbble.com/players/davidhariri/shots"); //put your name here
+$result = fetch_data("http://api.dribbble.com/players/YOUR_DRIBBBLE_NAME/shots"); //put your name here
 $result = json_decode($result, true);
 
 $query = "REPLACE INTO tbl_posts (id, service_id, datetime, category, service, data, attachment, permalink) VALUES ";
@@ -119,7 +119,7 @@ send_data($query, $dbhost, $dbuser, $dbpass, $dbname);
 //end dribbble
 
 //github
-$result = fetch_data("https://github.com/users/davidhariri/contributions_calendar_data"); //put your name here
+$result = fetch_data("https://github.com/users/YOUR_GITHUB_NAME/contributions_calendar_data"); //put your name here
 $result = json_decode($result, true);
 
 $query = "REPLACE INTO tbl_posts (id, service_id, datetime, category, service, data, attachment, permalink) VALUES ";
