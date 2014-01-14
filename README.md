@@ -19,7 +19,8 @@ River is an open-source social network feed agregation thing. In its current for
 - A fork of this repo
 - A Server running a recent version of Apache, PHP and MySQL
 - A Database
-- A Table (call this **tbl_posts**) *(structure: id, service_id, datetime, category, service, data, attachment, permalink)* Take a look at the **tbl_posts.sql** file for more information about table structure. I would suggest just executing this SQL statement to ensure proper configuration.
+- A Table (call this **tbl_posts**) *(structure: id, service_id, datetime, category, service, data, attachment, permalink)*
+- Take a look at the **tbl_posts.sql** file for more information about table structure. I would suggest just executing this SQL statement to ensure proper configuration.
 - A Twitter Developer account with Auth (If you want Twitter access)
 - An Instagram Developer access token (If you want instagram access)
 - Patience and a bit of dev skill
