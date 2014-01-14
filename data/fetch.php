@@ -50,7 +50,7 @@ foreach ($decoded as $key => $value) {
 	$service_id = strval($decoded[$key]['id']);
 	$attachment = $decoded[$key]['entities']['urls'][0]['expanded_url'];
 	$photo = $decoded[$key]['entities']['media'][0]['media_url'];
-	$permalink = "https://twitter.com/davehariri/status/".$service_id;
+	$permalink = "https://twitter.com/YOUR_TWITTER_HANDLE/status/".$service_id; //put your name here as well
 
 	if( strlen($attachment) > 1 ) {
 		$category = 'link';
