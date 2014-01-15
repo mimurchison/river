@@ -127,8 +127,8 @@ $query = "REPLACE INTO tbl_posts (id, service_id, datetime, category, service, d
 foreach ($result as $key => $value) {
 	$service = 'github';
 	$category = 'contributions';
-	$service_id = strtotime($result[$key][0]);
-	$datetime = date("Y-m-d H:i:s", strtotime($result[$key][0]));
+	$service_id = substr(strtotime(date("Y-m-d", strtotime($result[$key][0]))), 0, -3) . "000";
+	$datetime = date("Y-m-d", strtotime($result[$key][0]));
 
 	if($result[$key][1] > 1) {
 		$data = ($result[$key][1] . " Contributions");
