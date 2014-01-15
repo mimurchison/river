@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-include "../pass.php";
+include("../pass.php");
 //stats getter
 function get_data($query, $dbhost, $dbuser, $dbpass, $dbname){
 	$db = new mysqli($dbhost,$dbuser,$dbpass,$dbname);

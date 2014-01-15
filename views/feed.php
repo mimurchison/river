@@ -1,8 +1,8 @@
 <li><div class="dot"></div></li>
 <?php
 
-include '../pass.php';
-include '../data/fetch.php';
+include("../pass.php");
+include("../data/fetch.php");
 
 $db = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
